@@ -38,7 +38,16 @@ public class Msg implements Parcelable {
     public Msg() {
     }
 
-    protected Msg(Parcel in) {
+    public Msg(String msg) {
+        this.msg = msg;
+    }
+
+    public Msg(String msg, long time) {
+        this.msg = msg;
+        this.time = time;
+    }
+
+    public Msg(Parcel in) {
         this.msg = in.readString();
         this.time = in.readLong();
     }
