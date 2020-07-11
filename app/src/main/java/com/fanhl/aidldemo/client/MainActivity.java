@@ -36,6 +36,7 @@ public class MainActivity extends AppCompatActivity {
         @Override
         public void handleMessage(Message msg) {
             super.handleMessage(msg);
+            mAdapter.setNewData(mMsgs);
             mAdapter.notifyDataSetChanged();
         }
     };
