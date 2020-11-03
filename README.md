@@ -1,6 +1,6 @@
 # AidlDemo
 
-A Demo for AIDL.
+A Demo for AIDL.实现跨进程通信。
 
 # 参考
 
